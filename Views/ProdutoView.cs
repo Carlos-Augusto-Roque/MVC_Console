@@ -25,5 +25,22 @@ namespace MVC_Console.Views
             
             Console.ResetColor();
         }
+
+        //metodo para cadastrar os produtos
+        public Produto CadastrarProduto(){
+
+            Produto produto = new Produto();//instaciado um objeto Produto
+
+            System.Console.Write($"Código do Produto: ");
+            produto.Codigo = int.Parse(Console.ReadLine());
+
+            System.Console.Write($"Descrição do Produto: ");
+            produto.Nome = Console.ReadLine();
+            
+            System.Console.Write($"Preço do Produto: R$ ");
+            produto.Preco = float.Parse(Console.ReadLine());
+
+            return produto;
+        }
     }
 }

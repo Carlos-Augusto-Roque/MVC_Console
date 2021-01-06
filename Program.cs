@@ -14,6 +14,9 @@ namespace MVC_Console
 
             //instanciado a classe produto controller 
             ProdutoController produtoController = new ProdutoController();
+
+            produtoController.Cadastrar();
+
             produtoController.MostrarProdutos();//executar o método mostrar produtos
         }
     }
